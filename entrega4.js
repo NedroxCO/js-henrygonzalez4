@@ -2,9 +2,9 @@
 
 let monto = prompt("Ingrese el valor a convertir");
 
-let divisa1 = prompt("Ingrese la divisa del monto ingresado (ARS/USD/EUR")
+let divisa1 = prompt("Ingrese la divisa del monto ingresado (ARS/USD/EUR").toUpperCase();
 
-let divisa2 = prompt("Ingrese la divisa a convertir (ARS/USD/EUR)");
+let divisa2 = prompt("Ingrese la divisa a convertir (ARS/USD/EUR)").toUpperCase();
 
 /*FUNCIONES*/
 
@@ -47,4 +47,3 @@ if (divisa1 == "ARS"){
 } else {
     alert(monto + " " + divisa1 + " Es igual a " + convertidorEUR(monto, divisa1, divisa2) + " " + divisa2);
 }
-
